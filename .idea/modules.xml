@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EagerFetching.iml" filepath="$PROJECT_DIR$/EagerFetching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate_Mapping.iml" filepath="$PROJECT_DIR$/Hibernate_Mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JoinColumn-Annotation.iml" filepath="$PROJECT_DIR$/JoinColumn-Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LazyFetching.iml" filepath="$PROJECT_DIR$/LazyFetching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/One-To-Many-Mapping.iml" filepath="$PROJECT_DIR$/One-To-Many-Mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/One-To-One-Mapping.iml" filepath="$PROJECT_DIR$/One-To-One-Mapping.iml" />
+    </modules>
+  </component>
+</project>
