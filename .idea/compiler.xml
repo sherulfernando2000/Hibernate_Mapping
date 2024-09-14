@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="HQL" />
         <module name="EagerFetching" />
         <module name="Many-To-Many" />
         <module name="JoinColumn-Annotation" />
         <module name="LazyFetching" />
         <module name="One-To-One-Mapping" />
         <module name="One-To-Many-Mapping" />
+        <module name="SQL" />
       </profile>
     </annotationProcessing>
   </component>
