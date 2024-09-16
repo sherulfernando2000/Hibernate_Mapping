@@ -14,7 +14,7 @@ public class Address {
     private String city;
 
     @ManyToOne
-    @JoinColumn(name = "CID", nullable = false)
+    @JoinColumn(name = "CID", nullable = false, referencedColumnName = "cid")
     private Customer customer;
 
     public Address() {

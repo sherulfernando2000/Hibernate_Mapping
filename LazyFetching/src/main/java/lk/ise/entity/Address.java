@@ -67,4 +67,15 @@ public class Address {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "aid=" + aid +
+                ", no='" + no + '\'' +
+                ", road='" + road + '\'' +
+                ", city='" + city + '\'' +
+                ", customer=" + customer +
+                '}';
+    }
 }
