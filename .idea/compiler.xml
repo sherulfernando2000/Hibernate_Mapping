@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HQL" />
+        <module name="JPQL" />
         <module name="EagerFetching" />
         <module name="Many-To-Many" />
         <module name="JoinColumn-Annotation" />

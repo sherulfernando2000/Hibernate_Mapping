@@ -46,11 +46,10 @@ public class Main {
         }*/
 
         //Insert
-       /* Query query1 = session.createQuery("insert into Customer(cid,name) values(?1,?2)");
-        query1.setParameter(1,5);
-        query1.setParameter(2,"Ashan");
+        Query query1 = session.createQuery("insert into Customer(cid,name) values(?1,?2)");
+        query1.setParameter(1,6);
+        query1.setParameter(2,"Piyal");
         query1.executeUpdate();
-*/
         //Update
         /*Query query2 = session.createQuery("update Customer set name=?1 where cid=?2");
         query2.setParameter(1,"Chethika");
@@ -72,14 +71,14 @@ public class Main {
 */
 
         //
-        Query query4 = session.createQuery("select cid, name from Customer");
-        /*List<Object[]>customers = query4.list();
+       /* Query query4 = session.createQuery("select cid, name from Customer");
+        List<Object[]>customers = query4.list();
         for (Object[] objects : customers) {
             System.out.println(Arrays.toString(objects));
         }*/
 
         //join column
-       Query query=session.createQuery("select a.aid,a.road,c.name from Address a inner join Customer c on a.aid = c.cid");
+       Query query=session.createQuery("select a.aid,a.road,c.name from Address a inner join Customer c on a.customer c");
         List<Object[]>customers = query.list();
         for (Object[] objects : customers) {
             System.out.println(Arrays.toString(objects));

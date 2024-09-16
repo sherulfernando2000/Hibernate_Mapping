@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/EagerFetching/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HQL/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HQL/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQL/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQL/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JoinColumn-Annotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JoinColumn-Annotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LazyFetching/src/main/java" charset="UTF-8" />
