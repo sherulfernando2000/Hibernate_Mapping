@@ -12,14 +12,6 @@ public class Customer {
     @Id
     private int cid;
 
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "cid=" + cid +
-                ", name='" + name + '\'' +
-                ", addresses=" + addresses +
-                '}';
-    }
 
     private String name;
 
@@ -59,4 +51,14 @@ public class Customer {
     public void setAddresses(List<Address> addresses) {
         this.addresses = addresses;
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "cid=" + cid +
+                ", name='" + name + '\'' +
+                ", addresses=" + addresses +
+                '}';
+    }
+
 }
