@@ -13,6 +13,8 @@
         <module name="JoinColumn-Annotation" />
         <module name="LazyFetching" />
         <module name="One-To-One-Mapping" />
+        <module name="Practice" />
+        <module name="Hibernate_LifeCycle" />
         <module name="One-To-Many-Mapping" />
         <module name="SQL" />
       </profile>

@@ -2,7 +2,6 @@ package lk.ise.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
@@ -14,7 +13,6 @@ public class Address {
     private String city;
 
     @ManyToOne
-    @JoinColumn(name = "CID")
     private Customer customer;
 
     public Address() {

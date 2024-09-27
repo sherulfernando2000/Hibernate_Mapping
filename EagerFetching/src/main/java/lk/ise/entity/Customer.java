@@ -49,4 +49,6 @@ public class Customer {
     public void setAddresses(List<Address> addresses) {
         this.addresses = addresses;
     }
+
+
 }

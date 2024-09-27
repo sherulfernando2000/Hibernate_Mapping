@@ -1,9 +1,9 @@
-package lk.ise.entity;
+package lk.ijse.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import lk.ijse.entity.Customer;
 
 @Entity
 public class Address {
@@ -14,7 +14,6 @@ public class Address {
     private String city;
 
     @ManyToOne
-    @JoinColumn(name = "CID")
     private Customer customer;
 
     public Address() {

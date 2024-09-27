@@ -19,8 +19,8 @@ public class Main {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
-       /* Query query = session.createQuery("from Customer");
-        //insert, update, delete
+        /*Query query = session.createQuery("from Customer");
+
         List<Customer> customers = query.list();
         for (Customer customer: customers){
             System.out.println(customer);
@@ -29,16 +29,17 @@ public class Main {
 
         //unique one data from customer
        /* Query query1 = session.createQuery("from Customer where cid = :id");
-        query1.setParameter("id", 4);*/
-
-        /*Query query1 = session.createQuery("from Customer where cid= ?1");
-        query1.setParameter(1, 4);
+        query1.setParameter("id", 6);
         Customer customer = (Customer) query1.uniqueResult();
         System.out.println(customer);
 */
+        /*Query query1 = session.createQuery("from Customer where cid= ?1");
+        query1.setParameter(1, 4);
+        Customer customer = (Customer) query1.uniqueResult();
+        System.out.println(customer);*/
 
         //load only one column
-        /*Query query2 = session.createQuery("select name,cid from Customer");
+       /* Query query2 = session.createQuery("select name,cid from Customer");
         List<Object[]> collection = query2.getResultList();
         for (Object[] c : collection){
             System.out.println(c[0]);
@@ -46,10 +47,11 @@ public class Main {
         }*/
 
         //Insert
-        Query query1 = session.createQuery("insert into Customer(cid,name) values(?1,?2)");
+        /*Query query1 = session.createQuery("insert into Customer(cid, name) values(?1,?2)");
         query1.setParameter(1,6);
         query1.setParameter(2,"Piyal");
-        query1.executeUpdate();
+        query1.executeUpdate();*/
+
         //Update
         /*Query query2 = session.createQuery("update Customer set name=?1 where cid=?2");
         query2.setParameter(1,"Chethika");
@@ -71,18 +73,23 @@ public class Main {
 */
 
         //
-       /* Query query4 = session.createQuery("select cid, name from Customer");
+        /*Query query4 = session.createQuery("select cid, name from Customer");
         List<Object[]>customers = query4.list();
         for (Object[] objects : customers) {
             System.out.println(Arrays.toString(objects));
         }*/
 
         //join column
-       Query query=session.createQuery("select a.aid,a.road,c.name from Address a inner join Customer c on a.customer c");
+        Query query=session.createQuery("select a.aid,a.road,c.name,a.customer from Address a  join Customer c on a.customer = c");
         List<Object[]>customers = query.list();
         for (Object[] objects : customers) {
-            System.out.println(Arrays.toString(objects));
+            System.out.println(objects[0]+": "+objects[1]);
         }
+
+        /*List<Customer>customers = query.list();
+        for (Customer customer : customers) {
+            System.out.println(customer);
+        }*/
 
 
         transaction.commit();

@@ -1,7 +1,6 @@
 package lk.ise.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
@@ -13,10 +12,16 @@ public class Customer {
     private int cid;
     private String name;
 
-    @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "customer")
     private List<Address> addresses;
 
+    public List<Address> getAddresses() {
+        return addresses;
+    }
 
+    public void setAddresses(List<Address> addresses) {
+        this.addresses = addresses;
+    }
 
     public Customer() {
     }
@@ -40,13 +45,5 @@ public class Customer {
 
     public void setCid(int cid) {
         this.cid = cid;
-    }
-
-    public List<Address> getAddresses() {
-        return addresses;
-    }
-
-    public void setAddresses(List<Address> addresses) {
-        this.addresses = addresses;
     }
 }

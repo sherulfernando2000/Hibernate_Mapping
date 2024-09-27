@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/SQL/pom.xml" />
         <option value="$PROJECT_DIR$/HQL/pom.xml" />
         <option value="$PROJECT_DIR$/JPQL/pom.xml" />
+        <option value="$PROJECT_DIR$/Practice/pom.xml" />
+        <option value="$PROJECT_DIR$/Hibernate_LfeCycle/pom.xml" />
       </list>
     </option>
   </component>

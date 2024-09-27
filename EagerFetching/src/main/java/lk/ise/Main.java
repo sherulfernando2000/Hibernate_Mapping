@@ -30,12 +30,14 @@ public class Main {
         Transaction transaction = session.beginTransaction();
         Customer customer = session.get(Customer.class,4);
         System.out.println(customer.getCid());
+        System.out.println(customer.getAddresses().toArray());
 
 
 
-        Address address = session.get(Address.class,4);
+
+        /*Address address = session.get(Address.class,4);
         System.out.println(address);
-
+*/
         transaction.commit();
         session.close();
     }

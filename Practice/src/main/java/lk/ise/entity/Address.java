@@ -2,30 +2,26 @@ package lk.ise.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Address {
     @Id
     private int aid;
-    private String no;
     private String road;
     private String city;
 
     @ManyToOne
-    @JoinColumn(name = "CID")
     private Customer customer;
 
-    public Address() {
-    }
 
-    public Address(int aid, String no, String road, String city,Customer customer) {
+    public Address(int aid, String road, String city) {
         this.aid = aid;
-        this.no = no;
         this.road = road;
         this.city = city;
-        this.customer =customer;
+    }
+
+    public Address() {
     }
 
     public int getAid() {
@@ -34,14 +30,6 @@ public class Address {
 
     public void setAid(int aid) {
         this.aid = aid;
-    }
-
-    public String getNo() {
-        return no;
-    }
-
-    public void setNo(String no) {
-        this.no = no;
     }
 
     public String getRoad() {
@@ -60,11 +48,12 @@ public class Address {
         this.city = city;
     }
 
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    @Override
+    public String toString() {
+        return "Address{" +
+                "aid=" + aid +
+                ", road='" + road + '\'' +
+                ", city='" + city + '\'' +
+                '}';
     }
 }

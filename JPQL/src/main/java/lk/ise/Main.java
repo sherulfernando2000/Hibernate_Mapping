@@ -53,7 +53,7 @@ public class Main {
 
 
         //join
-        Query query1 = session.createQuery("select c.id,c.name,a.city,a.road from Address a join a.customer c");
+        Query query1 = session.createQuery("select c.id,c.name,a.city,a.road from Address a join a.customer c ");
         List<Object[]> customers = query1.list();
         for (Object[] customer : customers) {
             System.out.println(Arrays.toString(customer));

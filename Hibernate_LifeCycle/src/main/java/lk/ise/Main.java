@@ -14,7 +14,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Customer customer = new Customer();
-        customer.setCid(6);
+        customer.setCid(4);
         customer.setName("shenal");
 
         List<Address> addressList = new ArrayList<Address>();
